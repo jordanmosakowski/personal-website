@@ -1,0 +1,85 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+  
+.side-by-side{
+  margin-bottom: 20px;
+  display: flex;
+  img{
+    width: 50%;
+    border-radius: 5px;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+}
+.centered {
+  margin: 0 auto;
+  max-width: 1000px;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0%{opacity: 0; transform: translate(0px,50px)}
+  100%{opacity: 100%;}
+}
+
+a{
+  color: black;
+}
+
+.card{
+  margin-bottom: 20px;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.5s, transform 0.3s;
+  img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  text-decoration: none;
+}
+.card:hover{
+  background-color: #E9E9E9;
+  transform: scale(1.03);
+}
+  
+.gallery{
+    [data-tab]{
+        display: none;
+    }
+    &[data-currenttab=professional] [data-tab=professional],
+    &[data-currenttab=projects] [data-tab=projects],
+    &[data-currenttab=leadership] [data-tab=leadership],
+    &[data-currenttab=classes] [data-tab=classes]
+    {
+        display: block;
+    }
+    button[data-active=true]{
+        text-decoration: underline;
+    }
+    button{
+      border: none;
+      padding: 5px 20px;
+      font-size: 1em;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      background-color: white;
+      margin: 0 10px;
+      transition: background-color 0.5s, border-radius 0.3s;
+    }
+    button:hover{
+      background-color: #DFDFDF;
+      //border-radius: 10px;
+      cursor: pointer;
+    }
+}

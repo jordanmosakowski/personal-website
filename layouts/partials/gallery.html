@@ -1,0 +1,47 @@
+<script>
+    function buttonClick(elem, newValue){
+        const gallery = elem.closest(".gallery");
+        gallery.dataset.currenttab = newValue;
+        gallery.querySelectorAll("button").forEach((e) => e.dataset.active = "false");
+        elem.dataset.active = "true"
+    }
+</script>
+
+{{- $tab := "professional" -}}
+<div class="centered gallery" data-currenttab="{{ $tab }}">
+    <div>
+        <button data-active='{{(eq $tab "professional")}}' onclick="buttonClick(this,'professional')">Professional Experience</button>
+        <button data-active='{{(eq $tab "projects")}}' onclick="buttonClick(this,'projects')">Hackathons & Personal Projects</button>
+        <button data-active='{{(eq $tab "leadership")}}' onclick="buttonClick(this,'leadership')">Clubs & Leadership</button>
+        <button data-active='{{(eq $tab "classes")}}' onclick="buttonClick(this,'classes')">Classes</button>
+    </div>
+    <div data-tab="professional">
+        {{ range (where .Site.Pages "Type" "==" "professional").ByDate.Reverse  }}
+            {{ if .IsPage }}
+                {{ partial "card" (dict "id" .File.ContentBaseName) }}
+            {{ end }}
+        {{ end }}
+    </div>
+    <div data-tab="projects">
+        {{ range (where .Site.Pages "Type" "==" "projects").ByDate.Reverse  }}
+            {{ if .IsPage }}
+                {{ partial "card" (dict "id" .File.ContentBaseName) }}
+            {{ end }}
+        {{ end }}
+    </div>
+    <div data-tab="leadership">
+        {{ range (where .Site.Pages "Type" "==" "leadership").ByDate.Reverse  }}
+            {{ if .IsPage }}
+                {{ partial "card" (dict "id" .File.ContentBaseName) }}
+            {{ end }}
+        {{ end }}
+    </div>
+    <div data-tab="classes">
+        {{ range (where .Site.Pages "Type" "==" "classes").ByDate.Reverse  }}
+            {{ if .IsPage }}
+                {{ partial "card" (dict "id" .File.ContentBaseName) }}
+            {{ end }}
+        {{ end }}
+    </div>
+
+</div>

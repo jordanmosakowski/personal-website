@@ -1,0 +1,12 @@
+{{ define "main" }}
+    <div class="centered">
+        <h1>{{ .Title }}</h1>
+        <h3>{{ .Params.Start }}
+            {{ if .Params.End }}
+            - {{ .Params.End }}
+            {{ end }}
+        </h3>
+        <h4>{{ .Description }}</h4>
+        {{ .Content }}
+    </div>
+{{ end }}

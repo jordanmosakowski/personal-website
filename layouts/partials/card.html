@@ -1,0 +1,16 @@
+{{ $exp := site.GetPage .id }}
+{{ if $exp }}
+<a
+        class="card"
+        {{ if not .active }}{{ with $exp.RelPermalink }}href="{{ . }}"{{ end }}{{ end }}
+>
+    <img
+            {{ if not .active }}{{ with $exp.RelPermalink }}src="{{ . }}icon.png"{{ end }}{{ end }}
+    >
+    <div>
+        <h2>{{ $exp.Params.Title}}</h2>
+        <h3>{{ $exp.Params.Time }}</h3>
+        <span>{{ $exp.Params.Description}}</span>
+    </div>
+</a>
+{{ end }}
