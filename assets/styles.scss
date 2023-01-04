@@ -1,12 +1,30 @@
+html {
+  overflow: hidden;
+  height: 100%;
+}
 body {
   font-family: 'Roboto', sans-serif;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,27,65,1) 100%);
+  background-attachment: fixed;
+  background-position:center;
+  color: white;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 1000px;
+  height: 100%;
+  overflow: auto;
 }
 body::-webkit-scrollbar {
   display: none;
 }
-  
+
+h1,h2,h3,h4,h5,h6,button{
+  margin: 0;
+}
+
 .side-by-side{
   margin-bottom: 20px;
   display: flex;
@@ -19,7 +37,6 @@ body::-webkit-scrollbar {
 }
 .centered {
   margin: 0 auto;
-  max-width: 1000px;
   animation: fadeIn 0.5s;
 }
 
@@ -29,7 +46,8 @@ body::-webkit-scrollbar {
 }
 
 a{
-  color: black;
+  color: white;
+  text-decoration: none;
 }
 
 .card{
@@ -42,14 +60,14 @@ a{
     width: 100px;
     height: 100px;
     border-radius: 5px;
-    margin-right: 10px;
+    margin-right: 20px;
     object-fit: cover;
   }
   text-decoration: none;
-}
-.card:hover{
-  background-color: #E9E9E9;
-  transform: scale(1.03);
+  &:hover{
+    background-color:rgba(0, 0, 0, 0.5);
+    transform: scale(1.03);
+  }
 }
   
 .gallery{
@@ -68,18 +86,38 @@ a{
     }
     button{
       border: none;
-      padding: 5px 20px;
+      padding: 1rem;
       font-size: 1em;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      background-color: white;
-      margin: 0 10px;
+      background-color: transparent;
+      border-radius: 0.5rem;
+      color: white;
+      margin: 0;
       transition: background-color 0.5s, border-radius 0.3s;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+      }
     }
-    button:hover{
-      background-color: #DFDFDF;
-      //border-radius: 10px;
-      cursor: pointer;
-    }
+}
+
+nav {
+  display: flex;
+  margin-bottom: 1.5rem;
+  .name {
+    font-size: 1.5rem;
+  }
+  .links {
+    margin-left: auto;
+    i {
+      font-size: 1.5rem;
+      padding: 0 0.3rem;
+    } 
+  }
+}
+
+footer {
+  height: 3rem;
 }

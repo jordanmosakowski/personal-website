@@ -12,3 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 {{ $style := resources.Get "styles.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+<link href="/fa/css/fontawesome.css" rel="stylesheet">
+<link href="/fa/css/brands.css" rel="stylesheet">
+<link href="/fa/css/solid.css" rel="stylesheet">
