@@ -1,8 +1,8 @@
 ---
-title: "Monarch Robotics"
+title: "Club Lead, Monarch Robotics"
 date: 2021-05-31T12:00:00-06:00
 draft: false
-description: "Led high school robotics club through design/prototype/build/test process for multiple competitions, and programmed autonomous & user-controlled robots. Driver at 4 competitions."
+description: "During my time leading my high school robotics club, we won half a dozen awards across multiple competitions."
 time: "September 2017 - May 2021"
 category: club
 ---

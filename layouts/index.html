@@ -1,5 +1,14 @@
 {{ define "main" }}
     <main aria-role="main">
-      {{ partial "gallery" . }}
+      <div class="index-header">
+        <h1>Jordan Mosakowski</h1>
+        <h3>Student, Software Engineer, Computing Enthusiast</h3>
+        <div class="profile">
+          <img class="profile-pic" src="profile.jpeg">
+          <p>I have experience in full-stack web development, cloud infrastructure, virtual reality, robotics, and more. I've held internships at Amazon, Lockheed Martin, and INRIX. I currently attend school at Santa Clara University, where I am the President of our school's ACM chapter and Vice President of our EWB chapter. Check out some of my notable experinces below:</p>
+        </div>
+        <h2>Highlights</h2>
+        {{ partial "gallery" . }}
+      </div>
     </main>
 {{ end }}

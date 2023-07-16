@@ -4,11 +4,11 @@
         {{ partial "head" . }}
     </head>
 <body>
-    {{ partial "header" . }}
-    {{ block "main" . }}
-    {{end}}
-    <footer>
-        
-    </footer>
+    <div class="content">
+        {{ partial "header" . }}
+        {{ block "main" . }}
+        {{end}}
+    </div>
+    {{ partial "footer" .}}
 </body>
 </html>

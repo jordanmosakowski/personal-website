@@ -1,0 +1,12 @@
+{{ $exp := site.GetPage .id }}
+{{ if $exp }}
+<a class="featured"
+        {{ if not .active }}{{ with $exp.RelPermalink }}href="{{ . }}"{{ end }}{{ end }}
+>
+    <img {{ if not .active }}{{ with $exp.RelPermalink }}src="{{ . }}icon.png"{{ end }}{{ end }}>
+    <div>
+        <h3>{{ $exp.Params.Title}}</h2>
+        <span>{{ $exp.Params.Description}}</span>
+    </div>
+</a>
+{{ end }}

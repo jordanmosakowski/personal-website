@@ -1,3 +1,11 @@
 {{ define "main" }}
+    <main class="centered">
+        {{ range .Pages.ByDate.Reverse  }}
+            {{ if .IsPage }}
+                {{ partial "card" (dict "id" .File.ContentBaseName) }}
+            {{ end }}
+        {{ end }}
+    </main>
+    
     {{ .Content }}
 {{ end }}
