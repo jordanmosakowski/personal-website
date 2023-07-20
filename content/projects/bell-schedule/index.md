@@ -8,3 +8,7 @@ category: mobile
 featured: true
 weight: 5
 ---
+
+{{<side-by-side imageLeft="app.png">}}
+In 2019 I developed an app to track my high school's bell schedule, after I identified that students struggled to remember the complicated schedule, which caused undue stress. The app was initially developed for iOS and Android with Flutter, with Web support added in 2020. It received over 1000 downloads in 10 days, and today is still used by 700+ students each school day.
+{{</side-by-side>}}

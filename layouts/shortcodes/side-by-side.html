@@ -1,0 +1,19 @@
+<div class="side-by-side">
+    {{ if .Params.imageLeft }}
+        <img
+            src="{{ .Params.imageLeft }}"
+            loading="lazy"
+        />
+    {{ end }}
+    {{ with .Inner }}
+    <div>
+        {{ . | markdownify }}
+    </div>
+    {{ end }}
+    {{ if .Params.imageRight }}
+        <img
+                src="{{ .Params.imageRight }}"
+                loading="lazy"
+        />
+    {{ end }}
+</div>

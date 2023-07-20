@@ -1,8 +1,10 @@
 <nav>
     <div class="name">
+        {{ if not ( eq "/" .RelPermalink) }}
         <a href="/">
             Jordan Mosakowski
         </a>
+        {{ end }}
     </div>
     <div class="links">
         <a href="/professional"><i class="fa-solid fa-briefcase"></i>Professional Experience</a>

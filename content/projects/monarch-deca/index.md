@@ -6,3 +6,4 @@ description: "Created app for Monarch High School DECA club in Flutter (running 
 time: "2019"
 category: mobile
 ---
+After the success of my bell schedule app, I was contracted to develop an app for Monarch High School’s DECA club. I collaborated with club officers to identify and refine app features, user interface, and other requirements. The app is used as the primary mode of communication for DECA club, including calendaring and push notifications for upcoming events.
