@@ -1,11 +1,8 @@
 <span>{{ .Params }}</span>
-<div class="side-by-side">
-    {{ if .Params.imageLeft }}
         <img
             src="{{ .Params.imageLeft }}"
             loading="lazy"
         />
-    {{ end }}
     {{ with .Inner }}
     <div>
         {{ . | markdownify }}
