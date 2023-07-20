@@ -17,7 +17,7 @@ Project Manager for 25-member BEST Robotics team in 2018 and 2019, Project Manag
 {{<side-by-side imageRight="2.png">}}
 ### Programming Responsibilities:
 - Wrote software to control competitive robots for the FIRST (Java) and BEST (C++) Robotics Competitions. Features included movement from Xbox controllers, reading color sensor and gyroscope data, and PID loops for regulating speed, 
-- In 2021, I designed and implemented an autonomous driving system using computer vision models and data from camera feeds and sensors. Our team won the Autonomous Award for the competition.
+- In 2021, I designed and implemented an [autonomous driving system](https://dashboard2021.web.app/) using computer vision models and data from camera feeds and sensors. Our team won the Autonomous Award for the competition.
 {{</side-by-side>}}
 
 {{<side-by-side imageLeft="3.png">}}
