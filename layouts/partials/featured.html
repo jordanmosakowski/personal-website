@@ -1,4 +1,5 @@
 {{ $exp := site.GetPage .id }}
+{{.id}}
 {{ if $exp }}
 <a class="featured"
         {{ if not .active }}{{ with $exp.RelPermalink }}href="{{ . }}"{{ end }}{{ end }}
