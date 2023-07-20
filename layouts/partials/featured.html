@@ -6,8 +6,8 @@
 >
     <img {{ if not .active }}{{ with $exp.RelPermalink }}src="{{ . }}icon.png"{{ end }}{{ end }}>
     <div>
-        <h3>{{ $exp.Params.Title}}</h2>
-        <span>{{ $exp.Params.Description}}</span>
+        <h3>{{ $exp.Params.title}}</h2>
+        <span>{{ $exp.Params.description}}</span>
     </div>
 </a>
 {{ end }}
