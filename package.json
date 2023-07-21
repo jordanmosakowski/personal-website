@@ -1,0 +1,27 @@
+{
+  "name": "jordanmosakowski",
+  "version": "1.0.0",
+  "description": "",
+  "main": "imagemin.js",
+  "scripts": {
+    "imagemin": "node imagemin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanmosakowski/personal-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanmosakowski/personal-website/issues"
+  },
+  "homepage": "https://github.com/jordanmosakowski/personal-website#readme",
+  "devDependencies": {
+    "cli-glob": "^0.1.0",
+    "imagemin": "^1.0.5",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-keep-folder": "^5.3.2",
+    "imagemin-pngquant": "^9.0.2"
+  }
+}
