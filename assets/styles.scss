@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@400;700&display=swap');
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', 'Roboto', sans-serif;
   -ms-overflow-style: none;
   scrollbar-width: none;
   background: rgb(2,0,36);
@@ -103,6 +104,9 @@ nav {
   }
   .links {
     margin: auto 0 auto auto;
+    &[center="true"] {
+      margin: auto;
+    }
     a {
       font-size: 0.9rem;
       padding: 0 0.3rem;
@@ -110,6 +114,12 @@ nav {
         padding-right: 0.3rem;
       }
     } 
+  }
+  .drawer {
+    display: none;
+  }
+  .drawer-button {
+    display: none;
   }
 }
 
@@ -195,8 +205,69 @@ img.profile-pic{
     img{
       display: block;
       width: 100%;
-      max-width: 400px;
+      max-width: 250px;
       margin: auto;
+    }
+  }
+}
+.drawer-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  z-index: -1;
+  display: none;
+}
+
+@media (max-width: 800px) {
+  nav {
+    .links {
+      display: none;
+    }
+    .drawer-bg.open {
+      display: block;
+      z-index: 4;
+    }
+    .drawer {
+      z-index: 5;
+      display: block;
+      // hide to the right of the screen
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      max-width: 250px;
+      height: 100%;
+      background: rgb(2,0,36);
+      background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,27,65,1) 100%);
+      padding: 1rem;
+      transition: right 0.5s;
+      .close {
+        text-align: right;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+      div {
+        margin: 1rem 0;
+      }
+      a {
+        font-size: 1.2rem;
+        i {
+          padding-right: 1rem;
+          width: 1.2rem;
+        }
+      } 
+      
+    }
+    .drawer.open {
+      right: 0;
+    }
+    .drawer-button {
+      margin: auto 0 auto auto;
+      display: block;
+      cursor: pointer;
     }
   }
 }
