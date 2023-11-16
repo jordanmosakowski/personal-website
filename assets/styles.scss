@@ -104,6 +104,7 @@ nav {
   }
   .links {
     margin: auto 0 auto auto;
+    line-height: 25px;
     &[center="true"] {
       margin: auto;
     }
@@ -270,4 +271,12 @@ img.profile-pic{
       cursor: pointer;
     }
   }
+}
+
+h1{
+  padding-bottom: 20px;
+}
+
+h2, h3 {
+  padding-top: 15px;
 }
