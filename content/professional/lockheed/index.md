@@ -6,8 +6,9 @@ description: "Over the course of three summers and one school year, I developed 
 time: "June 2019 - August 2019, June 2020 - September 2021"
 category: webdev
 featured: true
-weight: 3
+weight: 4
 ---
+{{<side-by-side imageRight="vr.jpg">}}
 ## VR Experience Development
 - Built virtual reality (VR) and iOS applications to wirelessly control a robot
 - Developed proficiency in Unity platform by designing VR user interface and simulated 3D world.
@@ -28,3 +29,4 @@ From June-August 2021, I served as a mentor for high school interns that continu
 - MongoDB Database
 - OpenShift for hosting frontend, database, and API
 - GitLab CI/CD
+{{</side-by-side>}}

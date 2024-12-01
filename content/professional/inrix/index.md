@@ -6,7 +6,7 @@ description: "During Summer 2022, I developed multiple production features for S
 time: "June 2022 - September 2022"
 category: webdev
 featured: true
-weight: 2
+weight: 5
 ---
 
 {{<side-by-side imageLeft="trajectory.png">}}

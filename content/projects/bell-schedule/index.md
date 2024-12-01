@@ -5,8 +5,7 @@ draft: false
 description: "I created a mobile app for tracking the Monarch High School bell schedule. It is used by 700 students each school day, with a 0% crash rate."
 time: "January 2019 - Present"
 category: mobile
-featured: true
-weight: 5
+featured: false
 ---
 
 {{<side-by-side imageLeft="app.png">}}

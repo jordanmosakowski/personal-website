@@ -20,3 +20,7 @@ The class covered many fundamental machine learning topics, including:
 - Association Analysis
 - Neural Networks
 - Recommender Systems
+
+Final project included a presentation about a hypothetical machine learning model we would design, and a discussion about where we would aquire data, what kind of analysis we would perform, and how we would improve train our model.
+
+<iframe src="slides.pdf"></iframe>

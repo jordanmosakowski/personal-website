@@ -2,11 +2,15 @@
 title: "SDE Intern, Amazon"
 date: 2023-06-26T12:00:00-06:00
 draft: false
-description: "I am currently an intern on the Amazon One team."
-time: "June 2023 - Present"
-category: webdev
+description: "Built new microservice for Amazon One, the company's palm identification service "
+time: "June 2023 - September 2023"
+category: backend
 featured: true
-weight: 1
+weight: 2
 ---
-
-I am currently an intern on the Amazon One team. Amazon One is a new identity service that work by reading user's palms. It can currently be found in many grocery stores, concert halls, and other venues that require payment, identity, or entry.
+{{<side-by-side imageRight="one.jpeg">}}
+- Created new scalable and performant service for Amazon One, which will be rolling out to production in the coming months.
+- Determined architecture through design review process with team.
+- Wrote high-quality unit tests and integration tests for use in CI/CD pipeline.
+- Set up infrastructure through AWS CDK and Solutions Constructs. Used AWS services including Lambdas in Kotlin, and SQS.
+{{</side-by-side>}}

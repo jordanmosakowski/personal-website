@@ -1,3 +1,7 @@
 baseUrl = "https://mosakowski.dev/"
 languageCode = 'en-us'
 title = 'Jordan Mosakowski'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

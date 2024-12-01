@@ -11,7 +11,7 @@ Engineers Without Borders is an organization with a mission to help communites i
 
 EWB-SCU also partners with Valley Verde, a non-profit in San Jose, California. We are currently designing and constructing a germination chamber to help with initial plant growth during the winter season.
 {{</side-by-side>}}
-### Vice President (March 2023 - Present)
+### Vice President (March 2023 - March 2024)
 - Support the president in strategic planning, organization of the three different ministries (engineering, education, and public relations), and scheduling of meetings and special events.
 
 ### Public Relations Minister (March 2022 - March 2023)

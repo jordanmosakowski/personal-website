@@ -1,4 +1,4 @@
-<nav>
+<nav {{ if ( eq "/" .RelPermalink) }} center="true" {{ end }}>
     <div class="name">
         {{ if not ( eq "/" .RelPermalink) }}
         <a href="/">
@@ -8,7 +8,7 @@
     </div>
     <div class="links" {{ if ( eq "/" .RelPermalink) }} center="true" {{ end }}>
         <a href="/professional"><i class="fa-solid fa-briefcase"></i>Professional</a> | 
-        <a href="/projects"><i class="fa-solid fa-laptop"></i>Hackathons & Projects</a> | 
+        <a href="/projects"><i class="fa-solid fa-laptop"></i>Hackathons & Personal Projects</a> | 
         <a href="/leadership"><i class="fa-solid fa-user-group"></i>Clubs & Leadership</a> | 
         <a href="/classes"><i class="fa-solid fa-graduation-cap"></i>Classes</a>
     </div>
@@ -21,7 +21,7 @@
         <div class="close"><i class="fa-solid fa-close"></i> </div>
         <div><a href="/"><i class="fa-solid fa-home"></i>Home</a></div>
         <div><a href="/professional"><i class="fa-solid fa-briefcase"></i>Professional</a></div>
-        <div><a href="/projects"><i class="fa-solid fa-laptop"></i>Hackathons & Projects</a></div>
+        <div><a href="/projects"><i class="fa-solid fa-laptop"></i>Hackathons & Personal Projects</a></div>
         <div><a href="/leadership"><i class="fa-solid fa-user-group"></i>Clubs & Leadership</a></div>
         <div><a href="/classes"><i class="fa-solid fa-graduation-cap"></i>Classes</a></div>
     </div>
@@ -35,5 +35,4 @@
             document.querySelector(".drawer-bg").classList.toggle("open");
         });
     </script>
-
 </nav>

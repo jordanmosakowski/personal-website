@@ -6,13 +6,17 @@ category: club
 description: "I help lead the Santa Clara University Association for Computing Machinery, which organizes weekly workshops, hackathons, and industry speaker events."
 time: "October 2021 - Present"
 featured: true
-weight: 4
+weight: 3
 ---
 {{<side-by-side imageLeft="group.jpg">}}
 I have been involved with Santa Clara's ACM chapter since my freshman year, assisting in organizing workshops, socials, hackathons, and industry speaker events.
 ### President (April 2023 - Present)
-- Led club leadership growth, including adding a Diversity, Equity, and Inclusion Coordinator, Hackathon Coordinator, and Professional Development Coordinator.
-- Expanded club offerings through personal project workshops, interviewing practice sessions, and the aquisition of AI and competitive programming clubs.
+Led 14 people to grow Santa Clara University's ACM Chapter to over 150 events for 500+ students, including:
+- Brand new competitive programming sub-club, which organized two competitions and attended the ICPC competition. This sub-club has now expanded to include its own leadership team dedicated to helping members learn how to approach algorithms problems to help them in technical interviews and competitions
+- Weekly workshops and professional development events
+- 10 guest speaker events
+- 3 Hackathons in collaboration with industry and school partners, including Roblox, INRIX, Deloitte, and Southwest Airlines
+- 5 off campus social events
 {{</side-by-side>}}
 
 {{<side-by-side imageRight="smores.jpg">}}
